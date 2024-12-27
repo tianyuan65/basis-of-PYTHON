@@ -97,6 +97,27 @@
       * 用三个单引号(''')开始，三个单引号(''')结束。
       * ![多行注释.PNG](imgs/%E5%A4%9A%E8%A1%8C%E6%B3%A8%E9%87%8A.PNG)
 * 4.2 变量以及数据类型
+  * 对于重复使用，并且需要经常修改的数据，可以定义为变量，来提高编程效率。
+  * 定义变量的语法为：变量名=变量值(这里的=的意思是赋值，这点跟js里一样)
+  * 定义变量后可以使用变量名来访问变量值。
+    * ```
+        print("Who says, you're not perfect")
+        print("Who says, you're not worth it")
+        print("Who says, you're the only one that's hurting")
+        print("Trust me that's the price of beauty")
+        print("Who says, you're not pretty")
+        print("Who says, you're not beautiful")
+        
+        # 使用变量
+        whosays="Who says,you're not perfect"
+        print(whosays)
+      ```
+    * ![使用变量结果.PNG](imgs/%E4%BD%BF%E7%94%A8%E5%8F%98%E9%87%8F%E7%BB%93%E6%9E%9C.PNG)
+    * ![应用场景：给变量img赋值图片地址，输出就是该地址，具体是啥粘贴到网页查看即可](imgs/%E7%BB%99%E5%8F%98%E9%87%8Fimg%E8%B5%8B%E5%80%BC%E5%9B%BE%E7%89%87%E5%9C%B0%E5%9D%80%EF%BC%8C%E8%BE%93%E5%87%BA%E5%B0%B1%E6%98%AF%E8%AF%A5%E5%9C%B0%E5%9D%80%EF%BC%8C%E5%85%B7%E4%BD%93%E6%98%AF%E5%95%A5%E7%B2%98%E8%B4%B4%E5%88%B0%E7%BD%91%E9%A1%B5%E6%9F%A5%E7%9C%8B%E5%8D%B3%E5%8F%AF.PNG)
+  * 说明：
+    * 变量即可以变化的量，可以随时进行修改。
+    * 程序就是用来处理的，而变量就是用来存储数据的。
+  
 * 4.3 标识符和关键字
 * 4.4 类型转换
 
