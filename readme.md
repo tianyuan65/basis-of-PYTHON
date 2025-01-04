@@ -70,19 +70,19 @@
     * 从这儿开始是在Pycharm写的笔记。创建或打开一个项目或文件夹后，选择'Pure Python'创建一个新的纯Python工程项目，Location表示该项目的保存路径，Interpreter用来指定Python解释器的版本。
       * ![创建一个新的项目，方便学习Python](imgs/%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84%E9%A1%B9%E7%9B%AE%EF%BC%8C%E6%96%B9%E4%BE%BF%E5%AD%A6%E4%B9%A0Python.PNG)
     * 右键项目，选择新建，再选择Python文件，即可创建一个python文件，命名为testPython，写好代码后，右键选择运行XXX文件即可，或者左下侧有个三角形，点那个也是运行，但要明确运行的文件。
-      * ![创建一个新的项目，方便学习Python.PNG](imgs/%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84%E9%A1%B9%E7%9B%AE%EF%BC%8C%E6%96%B9%E4%BE%BF%E5%AD%A6%E4%B9%A0Python.PNG)
-      * ![如何运行Python文件.png](imgs/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8CPython%E6%96%87%E4%BB%B6.png)
-      * ![输出testPython的第一条运行结果.PNG](imgs/%E8%BE%93%E5%87%BAtestPython%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9D%A1%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C.PNG)
+      * ![创建一个新的项目，方便学习Python](imgs/%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84%E9%A1%B9%E7%9B%AE%EF%BC%8C%E6%96%B9%E4%BE%BF%E5%AD%A6%E4%B9%A0Python.PNG)
+      * ![如何运行Python文件](imgs/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8CPython%E6%96%87%E4%BB%B6.png)
+      * ![输出testPython的第一条运行结果](imgs/%E8%BE%93%E5%87%BAtestPython%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9D%A1%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C.PNG)
     * 页面布局介绍
       * 文件导航区域，就是查找、定位、打开项目文件的区域。
       * 文件编辑区域，能够编写当前选中的文件里的代码。
       * 控制台区域，用于输出程序执行内容，跟踪代码调试的执行。
     * 基本使用和配置
       * Pycharm左下侧有个如图示的图标，这是终端，点击后，输入python进入python环境，与命令提示符的终端效果一样。
-        * ![Pycharm里的终端，与cmd+r整出来的结果一样.PNG](imgs/Pycharm%E9%87%8C%E7%9A%84%E7%BB%88%E7%AB%AF%EF%BC%8C%E4%B8%8Ecmd%2Br%E6%95%B4%E5%87%BA%E6%9D%A5%E7%9A%84%E7%BB%93%E6%9E%9C%E4%B8%80%E6%A0%B7.PNG)
+        * ![Pycharm里的终端，与cmd+r整出来的结果一样](imgs/Pycharm%E9%87%8C%E7%9A%84%E7%BB%88%E7%AB%AF%EF%BC%8C%E4%B8%8Ecmd%2Br%E6%95%B4%E5%87%BA%E6%9D%A5%E7%9A%84%E7%BB%93%E6%9E%9C%E4%B8%80%E6%A0%B7.PNG)
       * 点击左上侧文件的设置，在文件和代码模板中可设置编码格式，如项目创建时间，作者名，文件名以及项目名称，之后可以根据公司的要求，设置更多编码格式
-        * ![设置编码格式.PNG](imgs/%E8%AE%BE%E7%BD%AE%E7%BC%96%E7%A0%81%E6%A0%BC%E5%BC%8F.PNG)
-        * ![设置编码格式后创建的文件的顶部可看到之前设置的格式.PNG](imgs/%E8%AE%BE%E7%BD%AE%E7%BC%96%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%90%8E%E5%88%9B%E5%BB%BA%E7%9A%84%E6%96%87%E4%BB%B6%E7%9A%84%E9%A1%B6%E9%83%A8%E5%8F%AF%E7%9C%8B%E5%88%B0%E4%B9%8B%E5%89%8D%E8%AE%BE%E7%BD%AE%E7%9A%84%E6%A0%BC%E5%BC%8F.PNG)
+        * ![设置编码格式](imgs/%E8%AE%BE%E7%BD%AE%E7%BC%96%E7%A0%81%E6%A0%BC%E5%BC%8F.PNG)
+        * ![设置编码格式后创建的文件的顶部可看到之前设置的格式](imgs/%E8%AE%BE%E7%BD%AE%E7%BC%96%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%90%8E%E5%88%9B%E5%BB%BA%E7%9A%84%E6%96%87%E4%BB%B6%E7%9A%84%E9%A1%B6%E9%83%A8%E5%8F%AF%E7%9C%8B%E5%88%B0%E4%B9%8B%E5%89%8D%E8%AE%BE%E7%BD%AE%E7%9A%84%E6%A0%BC%E5%BC%8F.PNG)
 ## 四、Python
 * 4.1 注释
   * 1. 注释介绍
@@ -92,10 +92,10 @@
     * 在Python中支持单行注释和多行注释。
     * **单行注释**
       * 一般情况下注释写在代码的上面，只对当前行有效，shift+3或Ctrl+/(这是快捷键方法)都可，有时也会写在代码后面，但比较少，绝对不能写在前面。
-      * ![单行注释.PNG](imgs/%E5%8D%95%E8%A1%8C%E6%B3%A8%E9%87%8A.PNG)
+      * ![单行注释](imgs/%E5%8D%95%E8%A1%8C%E6%B3%A8%E9%87%8A.PNG)
     * **多行注释**
       * 用三个单引号(''')开始，三个单引号(''')结束。
-      * ![多行注释.PNG](imgs/%E5%A4%9A%E8%A1%8C%E6%B3%A8%E9%87%8A.PNG)
+      * ![多行注释](imgs/%E5%A4%9A%E8%A1%8C%E6%B3%A8%E9%87%8A.PNG)
 * 4.2 变量以及数据类型
   * 1. 变量的定义
     * 对于重复使用，并且需要经常修改的数据，可以定义为变量，来提高编程效率。
@@ -113,7 +113,7 @@
           whosays="Who says,you're not perfect"
           print(whosays)
         ```
-      * ![使用变量结果.PNG](imgs/%E4%BD%BF%E7%94%A8%E5%8F%98%E9%87%8F%E7%BB%93%E6%9E%9C.PNG)
+      * ![使用变量结果](imgs/%E4%BD%BF%E7%94%A8%E5%8F%98%E9%87%8F%E7%BB%93%E6%9E%9C.PNG)
       * ![应用场景：给变量img赋值图片地址，输出就是该地址，具体是啥粘贴到网页查看即可](imgs/%E7%BB%99%E5%8F%98%E9%87%8Fimg%E8%B5%8B%E5%80%BC%E5%9B%BE%E7%89%87%E5%9C%B0%E5%9D%80%EF%BC%8C%E8%BE%93%E5%87%BA%E5%B0%B1%E6%98%AF%E8%AF%A5%E5%9C%B0%E5%9D%80%EF%BC%8C%E5%85%B7%E4%BD%93%E6%98%AF%E5%95%A5%E7%B2%98%E8%B4%B4%E5%88%B0%E7%BD%91%E9%A1%B5%E6%9F%A5%E7%9C%8B%E5%8D%B3%E5%8F%AF.PNG)
     * 说明：
       * 变量即可以变化的量，可以随时进行修改。
@@ -136,10 +136,26 @@
   * 3. 查看数据类型
     * 在python中，只要定义一个变量，并且它有数据，那么它的类型就已经确定了，不需要开发者主动地说明他的类型，系统会自动识别，意思就是**变量没有类型，数据才有类型**。
     * 如果临时想要查看一个变量存储的数据类型，可以使用type方法来查看变量存储的数据类型。格式：type(变量名)
-      * ![type(变量名)来查看变量存储的数据类型.PNG](imgs/type%28%E5%8F%98%E9%87%8F%E5%90%8D%29%E6%9D%A5%E6%9F%A5%E7%9C%8B%E5%8F%98%E9%87%8F%E5%AD%98%E5%82%A8%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.PNG)
+      * ![type(变量名)来查看变量存储的数据类型](imgs/type%28%E5%8F%98%E9%87%8F%E5%90%8D%29%E6%9D%A5%E6%9F%A5%E7%9C%8B%E5%8F%98%E9%87%8F%E5%AD%98%E5%82%A8%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.PNG)
 * 4.3 标识符和关键字
-  * 1. 命名规范
-  * 2. 关键字
+  * 计算机编程语言中，标识符，也叫变量名，它是用户编程时使用的名字，用于给变量、常量、函数、语句块等命名，已建立起名称与使用之间的关系，但须注意以下三点。
+    * 标识符/变量名由字母、下划线和数字组成，且绝对不能以数字开头。
+      * ![数字不能是变量名的开头](imgs/%E6%95%B0%E5%AD%97%E4%B8%8D%E8%83%BD%E6%98%AF%E5%8F%98%E9%87%8F%E5%90%8D%E7%9A%84%E5%BC%80%E5%A4%B4.PNG)
+    * 严格区分大小写。
+      * ![严格区分大小写](imgs/%E4%B8%A5%E6%A0%BC%E5%8C%BA%E5%88%86%E5%A4%A7%E5%B0%8F%E5%86%99.PNG)
+    * 不能使用关键字。是Python中已经写好的，有特殊功能的，比如，for，False，True，while等。
+      * ![不能使用既定的关键字来定义变量名](imgs/%E4%B8%8D%E8%83%BD%E4%BD%BF%E7%94%A8%E6%97%A2%E5%AE%9A%E7%9A%84%E5%85%B3%E9%94%AE%E5%AD%97%E6%9D%A5%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F%E5%90%8D.PNG)
+      * ![一些关键字](imgs/%E4%B8%80%E4%BA%9B%E5%85%B3%E9%94%AE%E5%AD%97.PNG)
+    * 1. 命名规范
+      * 标识符命名，要做到顾名思义。尽量取一个有意义的名字，做到让人一眼就能看出其用途和功能，也是为了提高代码可读性和效率的方式。比如，想定义一个人名，就用name；想定义一种动物，就用那个动物的英文单词cat，puppy，fish等。
+      * 遵守一些命名规范。
+        * 驼峰命名法，又分为大驼峰命名法和小驼峰命名法。
+          * (1). 大驼峰命名法(lower camel case)：每一个单词的首字母都采用大写字母，例如：FirstName、LastName，UpperCamelCase等。
+          * (2). 小驼峰命名法(upper camel case)：第一个单词以小写字母开始，第二个单词首字母大写，例如：userName、submitForm，lowerCamelCase等。
+        * 还有一种就是用下划线来连接两个单词，如，current_state，user_name等。Python的命令瑰色遵循PEP8标准。
+    * 2. 关键字
+      * 关键字的概念。是指一些具有特殊功能的标识符，是已经被python官方使用了的，所以不允许开发者自己定义和关键字相同名字的标识符。
+      * ![一些关键字](imgs/%E4%B8%80%E4%BA%9B%E5%85%B3%E9%94%AE%E5%AD%97.PNG)
 * 4.4 类型转换
   * 
 * 4.5 运算符
