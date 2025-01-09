@@ -175,6 +175,12 @@
     * float --> string
     * boolean --> string
   * 转换为布尔值
+    * int --> boolean，如果对非零的整型进行bool类型的转换，那么全是True，甚至负数也是True；在整数的范围内，0强制类型转换为bool类型的结果是False。
+    * float --> boolean，与int一样，只要是非零，无论正负，强制转换为bool类型的结果都是True；如果是0.0，转换结果就是False。
+    * string --> boolean，只要字符串中有内容，在强制类型转换为bool类型是，就会返回True，就算是空格转换结果也是True，也就是非空即是True。值得注意的是，无论是单双引号不影响前面那句话。
+    * list --> boolean，只要列表中有数据，强制类型转换为bool类型时，返回的结果就是True；若列表中没有任何数据，强制类型转换结果为False。
+    * tuple -- boolean，只要元组中有数据，在强制类型转换为bool类型时，就会返回True；但若元组中没有数据，就会返回False。
+    * dictionary --> boolean，只要字典中有数据，在强制类型转换为bool类型时，返回结果就是True；否则，返回False。
 * 4.5 运算符
   * 1. 算术运算符 
     * 
