@@ -313,5 +313,13 @@
         * ![or只要有一端满足True即可，但若or前面的是True后面的就不执行了](imgs/or%E5%8F%AA%E8%A6%81%E6%9C%89%E4%B8%80%E7%AB%AF%E6%BB%A1%E8%B6%B3True%E5%8D%B3%E5%8F%AF%EF%BC%8C%E4%BD%86%E8%8B%A5or%E5%89%8D%E9%9D%A2%E7%9A%84%E6%98%AFTrue%E5%90%8E%E9%9D%A2%E7%9A%84%E5%B0%B1%E4%B8%8D%E6%89%A7%E8%A1%8C%E4%BA%86.png)
 * 4.6 输入输出
   * 1. 输出
+    * 普通输出，就是print()，若有int和string类型的话，需要将int类型转换为string类型，会比较麻烦
+    * 格式化输出，会在scrapy框架中用到，爬虫后会生成json文件，可以放到excel文件或mysql又或者放到redis数据库中。在Python中最常用的就是%s和%d，%d代表数值，%s代表字符串的缩写。具体例子如下：
+      * ```
+        age=29
+        name='谷江山'
+        print('大家好，我是729声工场的配音演员%s，今年%d岁' % (name,age))
+        ```
   * 2. 输入
 * 4.7 流程控制语句
+* 4.8 高级数据类型
