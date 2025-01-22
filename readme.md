@@ -330,8 +330,9 @@
             满足条件时，要做的事
       * ![满足条件才会执行if下面的代码](imgs/%E6%BB%A1%E8%B6%B3%E6%9D%A1%E4%BB%B6%E6%89%8D%E4%BC%9A%E6%89%A7%E8%A1%8Cif%E4%B8%8B%E9%9D%A2%E7%9A%84%E4%BB%A3%E7%A0%81.png)
       * ![条件未满足，则不会执行](imgs/%E6%9D%A1%E4%BB%B6%E6%9C%AA%E6%BB%A1%E8%B6%B3%EF%BC%8C%E5%88%99%E4%B8%8D%E4%BC%9A%E6%89%A7%E8%A1%8C.png)
-        
+    * 需要注意的一个点是，调用input方法，返回的是一个字符串类型，若在控制台输入的是一个int，就会报错，此时就需要将input返回的强制转换为int类型，再进行比较。
   * 2. if else
+    * 
   * 3. elif
   * 4. for
   * 5. range
