@@ -390,3 +390,35 @@
       * 字符串拼接：join，字符串拼接。
   * 2. 列表高级
     * 列表的增删改查
+      * 增-向列表中添加元素，主要是三种方法，append、insert、extend
+        * append，在列表末端/最后添加新元素
+          * ```
+              food_list=['火锅','麻辣烫','酸菜馅饺子']
+              print(food_list)    #['火锅', '麻辣烫', '酸菜馅饺子']
+              food_list.append('兰州牛肉面')
+              print(food_list)    #['火锅', '麻辣烫', '酸菜馅饺子', '兰州牛肉面']
+            ```
+        * insert，向指定位置插入元素，insert方法的参数，第一个是索引位置，代表要插入的位置的下标；第二个是对象，就是要插入的元素内容。想要插入到哪个位置，就写那个位置的索引值。
+          * insert(index-索引,object-对象)
+          * ```
+              man_list=['Osborn','Sariel','Jesse']
+              print(man_list)     #['Osborn', 'Sariel', 'Jesse']
+              man_list.insert(1,'Evan')
+              print(man_list)     #['Osborn', 'Evan', 'Sariel', 'Jesse']
+              man_list.insert(3,'Charlie')
+              print(man_list)     #['Osborn', 'Evan', 'Sariel', 'Charlie', 'Jesse']
+            ```
+        * extend，合并两个列表，通过extend，可以将另一个列表中的元素逐一添加到列表中。extend方法的参数必须是可以迭代的数据，比如字符串、列表、元组、字典等，绝对不可以是int和float，但他俩是单个值不是系列值，也不可以遍历，所以想要变成可迭代就转为string或调用range方法。
+          * 另外扩展的一点是，可迭代对象甚至可以是一个空值，比如空列表、空字符串等，因为它们可以用for循环来进行遍历。
+          * ```
+              num_list=[1,2,3]
+              num_list2=[4,5,6]
+              num_list.extend(num_list2)
+              print(num_list)     #[1, 2, 3, 4, 5, 6]
+            ```
+      * 删-删除列表中已有元素
+      * 改-
+      * 查-查询列表中指定元素是否存在
+  * 3. 元组高级
+    * 冲冲冲
+  * 4. 字典高级
