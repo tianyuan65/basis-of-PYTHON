@@ -444,7 +444,19 @@
           * ![not in-指定元素不在列表中，返回True](imgs/not%20in-%E6%8C%87%E5%AE%9A%E5%85%83%E7%B4%A0%E4%B8%8D%E5%9C%A8%E5%88%97%E8%A1%A8%E4%B8%AD%EF%BC%8C%E8%BF%94%E5%9B%9ETrue.png)
           * ![not in-指定元素存在于列表中，返回False](imgs/not%20in-%E6%8C%87%E5%AE%9A%E5%85%83%E7%B4%A0%E5%AD%98%E5%9C%A8%E4%BA%8E%E5%88%97%E8%A1%A8%E4%B8%AD%EF%BC%8C%E8%BF%94%E5%9B%9EFalse.png)
   * 3. 元组高级
-    * 冲冲冲
+    * python中元组和列表类似，不同之处就在于元组只可读不可改，元组用小括号，而列表用中括号。增删改查中，在元组中能做到的只有查。
+      * 尝试增：
+        * ![尝试调用append方法增加，结果报错](imgs/%E5%B0%9D%E8%AF%95%E8%B0%83%E7%94%A8append%E6%96%B9%E6%B3%95%E5%A2%9E%E5%8A%A0%EF%BC%8C%E7%BB%93%E6%9E%9C%E6%8A%A5%E9%94%99.png)
+        * ![insert方法增加，失败](imgs/insert%E6%96%B9%E6%B3%95%E5%A2%9E%E5%8A%A0%EF%BC%8C%E5%A4%B1%E8%B4%A5.png)
+        * ![extend方法增加，失败](imgs/extend%E6%96%B9%E6%B3%95%E5%A2%9E%E5%8A%A0%EF%BC%8C%E5%A4%B1%E8%B4%A5.png)
+      * 尝试删
+        * ![del 删除，删不了](imgs/del%20%E5%88%A0%E9%99%A4%EF%BC%8C%E5%88%A0%E4%B8%8D%E4%BA%86.png)
+        * ![pop方法删除，删不了](imgs/pop%E6%96%B9%E6%B3%95%E5%88%A0%E9%99%A4%EF%BC%8C%E5%88%A0%E4%B8%8D%E4%BA%86.png)
+        * ![remove方法删除，删不了](imgs/remove%E6%96%B9%E6%B3%95%E5%88%A0%E9%99%A4%EF%BC%8C%E5%88%A0%E4%B8%8D%E4%BA%86.png)
+      * 尝试改
+        * ![尝试修改Tuple中元素值，结果肯定是失败的，元组中元素只可读不可改](imgs/%E5%B0%9D%E8%AF%95%E4%BF%AE%E6%94%B9Tuple%E4%B8%AD%E5%85%83%E7%B4%A0%E5%80%BC%EF%BC%8C%E7%BB%93%E6%9E%9C%E8%82%AF%E5%AE%9A%E6%98%AF%E5%A4%B1%E8%B4%A5%E7%9A%84%EF%BC%8C%E5%85%83%E7%BB%84%E4%B8%AD%E5%85%83%E7%B4%A0%E5%8F%AA%E5%8F%AF%E8%AF%BB%E4%B8%8D%E5%8F%AF%E6%94%B9.png)
+    * 定义只有一个数据的元组，**必须在唯一的元素后写一个逗号**，这说明该元组有且只有一个元素/数据。
+      * ![定义只有一个元素的元组时，必须在唯一的元素后加一个逗号，否则类型将不是Tuple类型](imgs/%E5%AE%9A%E4%B9%89%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E5%85%83%E7%B4%A0%E7%9A%84%E5%85%83%E7%BB%84%E6%97%B6%EF%BC%8C%E5%BF%85%E9%A1%BB%E5%9C%A8%E5%94%AF%E4%B8%80%E7%9A%84%E5%85%83%E7%B4%A0%E5%90%8E%E5%8A%A0%E4%B8%80%E4%B8%AA%E9%80%97%E5%8F%B7%EF%BC%8C%E5%90%A6%E5%88%99%E7%B1%BB%E5%9E%8B%E5%B0%86%E4%B8%8D%E6%98%AFTuple%E7%B1%BB%E5%9E%8B.png)
   * 4. 切片
     * 
   * 5. 字典高级
