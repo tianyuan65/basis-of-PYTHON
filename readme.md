@@ -481,6 +481,15 @@
           * ![当想要获取字典中不存在的key值时，会报keyError的错，来代表改键值对不存在](imgs/%E5%BD%93%E6%83%B3%E8%A6%81%E8%8E%B7%E5%8F%96%E5%AD%97%E5%85%B8%E4%B8%AD%E4%B8%8D%E5%AD%98%E5%9C%A8%E7%9A%84key%E5%80%BC%E6%97%B6%EF%BC%8C%E4%BC%9A%E6%8A%A5keyError%E7%9A%84%E9%94%99%EF%BC%8C%E6%9D%A5%E4%BB%A3%E8%A1%A8%E6%94%B9%E9%94%AE%E5%80%BC%E5%AF%B9%E4%B8%8D%E5%AD%98%E5%9C%A8.png)
           * ![在Python中不可以用这种方式获取value值，前端或许可以，但Python绝对不行](imgs/%E5%9C%A8Python%E4%B8%AD%E4%B8%8D%E5%8F%AF%E4%BB%A5%E7%94%A8%E8%BF%99%E7%A7%8D%E6%96%B9%E5%BC%8F%E8%8E%B7%E5%8F%96value%E5%80%BC%EF%BC%8C%E5%89%8D%E7%AB%AF%E6%88%96%E8%AE%B8%E5%8F%AF%E4%BB%A5%EF%BC%8C%E4%BD%86Python%E7%BB%9D%E5%AF%B9%E4%B8%8D%E8%A1%8C.png)
         * 通过get方法来获取元素的value值的话，将key值作为get方法的参数传进去即可，但也要注意不能传递不存在的key值，虽然不报错，会返回None值，但也无法获取任何数据。
+    * 字典的遍历
+      * 只遍历key，调用dicName的keys()，也可以省略，写成for 变量名 in dicName
+        * ![遍历字典-只遍历并输出字典的key](imgs/%E9%81%8D%E5%8E%86%E5%AD%97%E5%85%B8-%E5%8F%AA%E9%81%8D%E5%8E%86%E5%B9%B6%E8%BE%93%E5%87%BA%E5%AD%97%E5%85%B8%E7%9A%84key.png)
+      * 只遍历value，调用dicName的value()，专门用来获取字典中的value，它不像keys方法一样能被省略，一旦省略就会默认为获取字典中的key。
+        * ![遍历字典-只遍历并输出字典的value](imgs/%E9%81%8D%E5%8E%86%E5%AD%97%E5%85%B8-%E5%8F%AA%E9%81%8D%E5%8E%86%E5%B9%B6%E8%BE%93%E5%87%BA%E5%AD%97%E5%85%B8%E7%9A%84value.png)
+      * 遍历key和value，需要在变量名的位置写上key和value，缺一不可，在这里调用dicName的items方法，来获取字典的key和value。
+        * ![遍历字典-调用items方法获取字典中的key和value，并遍历字典中的key和value](imgs/%E9%81%8D%E5%8E%86%E5%AD%97%E5%85%B8-%E8%B0%83%E7%94%A8items%E6%96%B9%E6%B3%95%E8%8E%B7%E5%8F%96%E5%AD%97%E5%85%B8%E4%B8%AD%E7%9A%84key%E5%92%8Cvalue%EF%BC%8C%E5%B9%B6%E9%81%8D%E5%8E%86%E5%AD%97%E5%85%B8%E4%B8%AD%E7%9A%84key%E5%92%8Cvalue.png)
+      * 遍历字典的元素，并以元组的形式输出，还是调用dicName的items方法，但在变量名的位置写入一个变量名即可，这样就可以遍历字典的键值对，输出元组类型的数据。
+        * ![遍历字典-调用items方法获取获取字典中元素，并输出，输出的结果数据类型为元组](imgs/%E9%81%8D%E5%8E%86%E5%AD%97%E5%85%B8-%E8%B0%83%E7%94%A8items%E6%96%B9%E6%B3%95%E8%8E%B7%E5%8F%96%E8%8E%B7%E5%8F%96%E5%AD%97%E5%85%B8%E4%B8%AD%E5%85%83%E7%B4%A0%EF%BC%8C%E5%B9%B6%E8%BE%93%E5%87%BA%EF%BC%8C%E8%BE%93%E5%87%BA%E7%9A%84%E7%BB%93%E6%9E%9C%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B8%BA%E5%85%83%E7%BB%84.png)
 * 4.9 函数
   * 1. 定义函数
   * 2. 调用函数
