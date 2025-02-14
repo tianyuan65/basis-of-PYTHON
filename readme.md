@@ -568,7 +568,65 @@
       * 但read方法有效率低下的问题，当数据量庞大时，read方法就不会适用，此时可以调用readline方法，它是一行一行读取数据的。
         * ![read方法读取效率较低，可以调用readline方法，这样输出的虽只有一行数据，但提升了效率](imgs/read%E6%96%B9%E6%B3%95%E8%AF%BB%E5%8F%96%E6%95%88%E7%8E%87%E8%BE%83%E4%BD%8E%EF%BC%8C%E5%8F%AF%E4%BB%A5%E8%B0%83%E7%94%A8readline%E6%96%B9%E6%B3%95%EF%BC%8C%E8%BF%99%E6%A0%B7%E8%BE%93%E5%87%BA%E7%9A%84%E8%99%BD%E5%8F%AA%E6%9C%89%E4%B8%80%E8%A1%8C%E6%95%B0%E6%8D%AE%EF%BC%8C%E4%BD%86%E6%8F%90%E5%8D%87%E4%BA%86%E6%95%88%E7%8E%87.png)
       * 当然，一行一行读取数据有时效率也不高，因此可以调用readlines方法，用于多行读取，会将所有的数据都读取到，返回的是一个列表，列表的元素就是一行一行的数据，
-  * 3. 序列化和返序列化
+  * 3. 序列化和反序列化
+    * 通过文件操作，可以将字符串导入到一个本地文件，但若是一个对象(如列表、元组、字典等)，就无法直接写入到一个文件里，需要对这个对象进行序列化，才能写入到文件中。
+    * 序列化就是设计一套协议，按照某种规则，把内存中的数据转换为字节序列，保存到文件，反之从文件的字节序列恢复到内存中，就是反序列化。
+      * 对象--->字节序列 ===>序列化
+      * 字节序列--->对象 ===>反序列化
+    * Python中提供了JSON这个模块用来实现数据的序列化和反序列化。
+    * JSON模块
+      * JSON(Javascript Object Notation，JS对象简谱)是一种能够轻量级的数据交换标准，JSON的本质是字符串。
+    * 使用JSON实现序列化
+      * JSON提供了dump和dumps两种方法，将一个对象进行序列化。
+        * ![默认情况下，只能将字符串写入到文件中，其他的像列表字典等都不可以](imgs/%E9%BB%98%E8%AE%A4%E6%83%85%E5%86%B5%E4%B8%8B%EF%BC%8C%E5%8F%AA%E8%83%BD%E5%B0%86%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%86%99%E5%85%A5%E5%88%B0%E6%96%87%E4%BB%B6%E4%B8%AD%EF%BC%8C%E5%85%B6%E4%BB%96%E7%9A%84%E5%83%8F%E5%88%97%E8%A1%A8%E5%AD%97%E5%85%B8%E7%AD%89%E9%83%BD%E4%B8%8D%E5%8F%AF%E4%BB%A5.png)
+      * dumps()：dumps方法的作用是把对象转换成字符串，它本身不具备将数据写入到文件的功能，需要write方法做协助。
+        * ```
+            file2=open('test2.txt','w')
+            nameList=['Osborn','Evan','Sariel','Charlie','Jesse']
+            import json
+            name=json.dumps(nameList)
+            # 可以看到调用dumps方法转换后的结果是字符串类型的数据
+            print(type(name))   #<class 'str'>
+            # 将转换后的数据写入到文件中
+            file2.write(name)
+            file2.close() #要记得关闭文件，以免内存泄漏
+          ```
+      * dump()：dump方法的作用也是把对象转换成字符串，但它不像dumps，需要write方法的协助，它可以一步到位。
+        * ```
+            file3=open('test3.txt','w')
+            nameList=['Luke','Artem','Richard','Marius']
+            import json
+            # 调用dump方法，第一个参数为想要转换为字符串的数据，第二个参数就是想要将输入写入进去的那个指定的文件的变量名
+            # 这一步骤就相当于dumps的name=json.dumps(nameList)和file2.write(name)这两步操作，dump给简化了，一步到位
+            names=json.dump(nameList,file3) 
+            file3.close()
+          ```
+    * 使用JSON实现返反序列化
+      * JSON也提供了loads和load两种方法，来实现json字符串转为python对象/对象类型的数据的操作。
+        * loads()：
+          * ```
+              file4=open('test3.txt','r')
+              # 读取文件中的数据
+              content=file4.read()
+              print(content)      #["Luke", "Artem", "Richard", "Marius"]
+              # 转换前，读取到的数据是字符串类型的数据
+              print(type(content))    #<class 'str'>
+              import json
+              # 调用loads方法，将json字符串转换为python对象
+              loaded=json.loads(content)
+              print(loaded)   #['Luke', 'Artem', 'Richard', 'Marius']
+              # 转换后，json字符串类型的数据已变为python的list类型
+              print(type(loaded))     #<class 'list'>
+            ```
+        * load()：
+          * ```
+              file4=open('test3.txt','r')
+              import json
+              # 调用loaded方法，一步到位将json字符串转换为python对象
+              loaded=json.load(file4)
+              print(loaded)       #['Luke', 'Artem', 'Richard', 'Marius']
+              print(type(loaded)) #<class 'list'>
+            ```
 * 4.11 异常
   * 1. 读取文件异常
   * 2. try...except语句
